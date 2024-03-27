@@ -554,7 +554,9 @@ ol li {
   color: var(--ltn__primary-color-3) !important; }
 
 .ltn__secondary-color {
-  color: var(--ltn__secondary-color) !important; }
+  color: var(--ltn__secondary-color) !important;
+  font-size: 24px !important;
+ }
 
 .ltn__secondary-color-2 {
   color: var(--ltn__secondary-color-2) !important; }
@@ -7812,7 +7814,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @media (max-width: 1399px) {
   .ltn__section-title-2 .section-title {
-    font-size: 56px; }
+    font-size: 12px; }
   .section-title-style-3 .section-title {
     min-width: 320px; } }
 
@@ -10661,8 +10663,9 @@ input.cart-plus-minus-box {
     position: relative;
     list-style: none;
     padding-left: 60px;
-    font-weight: 700;
-    margin-bottom: 25px; }
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 14px; }
     .list-item-with-icon-2 ul li:last-child,
     .list-item-with-icon ul li:last-child {
       margin-bottom: 0; }
@@ -10674,7 +10677,7 @@ input.cart-plus-minus-box {
       font-weight: 900;
       left: 0;
       top: -5px;
-      background-color: var(--section-bg-1);
+      /* background-color: var(--section-bg-1); */
       height: 40px;
       width: 40px;
       line-height: 40px;
@@ -12723,4 +12726,53 @@ img.des-logo {
 }
 .ltn__top-bar-menu a:hover{
   color:#ffffff;
+}
+.multiflora
+{
+  animation: myAnim 5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
