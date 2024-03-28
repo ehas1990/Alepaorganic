@@ -436,8 +436,12 @@ ol li {
   .section-bg-1 .ltn__separate-line .separate-icon {
     background-color: var(--section-bg-1); }
 
-.section-bg-2 {
-  background-color: var(--section-bg-2); }
+/* .section-bg-2 {
+  background-color: var(--section-bg-2); } */
+  .section-bg-2
+  {
+    background-color: #2e84e3;
+  }
   .section-bg-2 h1,
   .section-bg-2 h2,
   .section-bg-2 h3,
@@ -12188,7 +12192,9 @@ input.cart-plus-minus-box {
 -------------------------*/
 .footer-top-area {
   padding-top: 92px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px; 
+  background-image: url("../img/alepa/foot_banner.jpg");
+}
 
 .footer-widget {
   margin-bottom: 60px; }
@@ -12729,13 +12735,15 @@ img.des-logo {
 }
 .multiflora
 {
-  animation: myAnim 5s ease 0s 1 normal forwards;
+  animation: myAnim 5s ease 0s infinite forwards;
+
 }
 @keyframes myAnim {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
 		transform: translateY(45px);
+  
 	}
 
 	24% {
@@ -12775,4 +12783,8 @@ img.des-logo {
 		opacity: 1;
 		transform: translateY(0px);
 	}
+}
+.ltn__call-to-action-area 
+{
+  background-color: #93b53963;
 }
